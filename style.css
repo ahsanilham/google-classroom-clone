@@ -1,0 +1,463 @@
+/* Reset dan base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #3c4043;
+    font-size: 14px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: white;
+    border-bottom: 1px solid #e0e0e0;
+    height: 64px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.header-left, .header-right {
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 16px;
+    color: #5f6368;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.logo span {
+    font-size: 22px;
+    color: #5f6368;
+}
+
+.header-right .material-icons {
+    color: #5f6368;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.profile-img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Content utama (main) */
+main {
+    display: flex;
+    margin-top: 64px; /* Header height */
+    height: calc(100vh - 64px);
+}
+
+/* Sidebar  */
+.sidebar {
+    width: 256px;
+    background-color: white;
+    height: 100%;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    bottom: 0;
+    z-index: 900;
+    padding: 8px 0;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #5f6368;
+}
+
+.sidebar-item:hover {
+    background-color: #f5f5f5;
+}
+
+.sidebar-item.active {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+.sidebar-item .material-icons {
+    margin-right: 16px;
+}
+
+.sidebar-divider {
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 8px 0;
+}
+
+.sidebar-classes {
+    margin-top: 8px;
+}
+
+.class-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 24px;
+    cursor: pointer;
+    color: #5f6368;
+}
+
+.class-item:hover {
+    background-color: #f5f5f5;
+}
+
+.class-item.active {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+.class-icon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #1a73e8;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    font-size: 12px;
+}
+
+/* Content area style */
+.content {
+    margin-left: 256px;
+    width: calc(100% - 256px);
+    padding: 16px;
+    overflow-y: auto;
+}
+
+/* Course header stylE*/
+.course-header {
+    padding: 16px 0;
+}
+
+.course-header h1 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #3c4043;
+}
+
+.course-header p {
+    font-size: 14px;
+    color: #5f6368;
+}
+
+/* Course tabs style */
+.course-tabs {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.tab {
+    padding: 16px 24px;
+    cursor: pointer;
+    color: #5f6368;
+    font-weight: 500;
+    position: relative;
+}
+
+.tab:first-child {
+    color: #1a73e8;
+}
+
+.tab-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 72px;
+    height: 3px;
+    background-color: #1a73e8;
+}
+
+/* Course Bannet */
+.course-banner {
+    background-color: #2d3b45;
+    color: white;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 24px;
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 2;
+}
+
+.banner-content h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.banner-decoration {
+    position: absolute;
+    right: 24px;
+    top: 24px;
+    z-index: 1;
+}
+
+.medal, .diploma {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    position: absolute;
+}
+
+.medal {
+    top: 0;
+    right: 60px;
+}
+
+.diploma {
+    top: 40px;
+    right: 0;
+    width: 100px;
+    height: 30px;
+    border-radius: 8px;
+    transform: rotate(-20deg);
+}
+
+.customize-btn {
+    position: absolute;
+    top: 16px;
+    right: 48px;
+    background-color: white;
+    color: #3c4043;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 3;
+}
+
+.customize-btn .material-icons {
+    font-size: 18px;
+    margin-right: 4px;
+}
+
+.info-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: white;
+    cursor: pointer;
+    z-index: 3;
+}
+
+/* Colum content style */
+.content-columns {
+    display: flex;
+    gap: 24px;
+}
+
+.left-column {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.right-column {
+    flex-grow: 1;
+}
+
+/* Style Card */
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    margin-bottom: 24px;
+    padding: 16px;
+}
+
+.card h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    color: #3c4043;
+}
+
+.add-link-btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #1a73e8;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.add-link-btn .material-icons {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.meet-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.generate-link-btn {
+    background: none;
+    border: none;
+    color: #1a73e8;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.class-code {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.no-work {
+    color: #5f6368;
+    font-style: italic;
+}
+
+/* Announcement card */
+.announcement-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.announcement-card .card-header {
+    margin-bottom: 0;
+}
+
+.announce-text {
+    color: #5f6368;
+    margin-left: 16px;
+}
+
+.share-icon {
+    color: #5f6368;
+    cursor: pointer;
+}
+
+/* Assignment dan material card */
+.assignment-card, .material-card {
+    padding: 16px;
+}
+
+.assignment-icon, .material-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e8f0fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+}
+
+.assignment-icon .material-icons, .material-icon .material-icons {
+    color: #1a73e8;
+}
+
+.assignment-content, .material-content {
+    flex-grow: 1;
+}
+
+.assignment-title, .material-title {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.assignment-date, .material-date {
+    color: #5f6368;
+    font-size: 12px;
+}
+
+/* Responsive style */
+@media (max-width: 1024px) {
+    .content-columns {
+        flex-direction: column;
+    }
+    
+    .left-column {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+    
+    .sidebar.open {
+        transform: translateX(0);
+    }
+    
+    .content {
+        margin-left: 0;
+        width: 100%;
+    }
+    
+    .course-banner {
+        height: auto;
+    }
+}

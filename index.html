@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Classroom Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Icons Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Roboto Font Sama dengan GOogle -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar ATAS -->
+    <header>
+        <div class="header-left">
+            <button class="menu-btn" id="menuBtn">
+                <span class="material-icons">menu</span>
+            </button>
+            <div class="logo">
+                <img src="https://www.gstatic.com/classroom/logo_square_rounded.svg" alt="Classroom Logo">
+                <span>Classroom > RL210 - Pemrograman WEB</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <span class="material-icons">apps</span>
+            <div class="profile">
+                <img src="https://lh3.googleusercontent.com/a/ACg8ocIw838kP0e3bWA2q7Ua7SB9jd96cFZqWFoDq9dn8AbfT3FXdDkD=s192-c-rg-br100" alt="Profile" class="profile-img">
+            </div>
+        </div>
+    </header>
+
+    <!-- Halaman utama / main -->
+    <main>
+        <!-- Sidebar NAV -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-item active">
+                <span class="material-icons">home</span>
+                <span>Home</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="material-icons">calendar_today</span>
+                <span>Calendar</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="material-icons">description</span>
+                <span>Resources</span>
+            </div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-item">
+                <span class="material-icons">school</span>
+                <span>Teaching</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="material-icons">rate_review</span>
+                <span>To Review</span>
+            </div>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-classes">
+                <div class="class-item">
+                    <div class="class-icon">T</div>
+                    <span>Teknologi Basis Data 4C</span>
+                </div>
+                <div class="class-item active">
+                    <div class="class-icon">R</div>
+                    <span>RL210 - Pemrograman WEB</span>
+            </div>
+        </aside>
+
+        <!-- Main konten -->
+        <section class="content">
+
+            <!-- Tabs NAV -->
+            <div class="course-tabs">
+                <div class="tab">Stream</div>
+                <div class="tab">Classwork</div>
+                <div class="tab">People</div>
+                <div class="tab">Grades</div>
+            </div>
+
+            <!-- Banner Kelas -->
+            <div class="course-banner">
+                <div class="banner-content">
+                    <h2>RL210 - Pemrograman WEB</h2>
+                    <p>Mochammad Ahsan Nur Ilham - 2304579</p>
+                </div>
+                <div class="banner-decoration">
+                    <div class="medal"></div>
+                    <div class="diploma"></div>
+                </div>
+                <button class="customize-btn">
+                    <span class="material-icons">edit</span>
+                    Customize
+                </button>
+                <span class="material-icons info-icon">info</span>
+            </div>
+
+            <!-- 2 Kolom Content (SPLIT) -->
+            <div class="content-columns">
+                <!-- Left panel -->
+                <div class="left-column">
+                    <div class="card">
+                        <h3>Quick Links</h3>
+                        <button class="add-link-btn">
+                            <span class="material-icons">add</span>
+                            Add Link
+                        </button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">
+                                <img src="https://www.svgrepo.com/show/349392/google-meet.svg" alt="Meet" class="meet-icon">
+                                <span>Meet</span>
+                            </div>
+                            <span class="material-icons">more_vert</span>
+                        </div>
+                        <button class="generate-link-btn">Generate Link</button>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="card-title">Class Code</div>
+                            <span class="material-icons">more_vert</span>
+                        </div>
+                        <div class="class-code">
+                            <span>vhldow7</span>
+                            <span class="material-icons">fullscreen</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Upcoming</h3>
+                        <p class="no-work">Nothing due soon</p>
+                    </div>
+                </div>
+
+                <!-- Panel kanan -->
+                <div class="right-column">
+                    <div class="card announcement-card">
+                        <div class="card-header">
+                            <img src="https://lh3.googleusercontent.com/a/ACg8ocL1Nl3wb89oaMhVjbF7xyCk1dIKTQ3HksxJK5gnPKnac5XKR3k=s40-c" alt="Profile" class="profile-img">
+                            <div class="announce-text">Share something with your class</div>
+                        </div>
+                    </div>
+
+                    <div class="card assignment-card">
+                        <div class="card-header">
+                            <div class="assignment-icon">
+                                <span class="material-icons">assignment</span>
+                            </div>
+                            <div class="assignment-content">
+                                <div class="assignment-title">
+                                    <span>Teknologi just posted: UTS Pemrograman WEB</span>
+                                </div>
+                                <div class="assignment-date">Mar 25 (Edited Mar 25)</div>
+                            </div>
+                            <span class="material-icons">more_vert</span>
+                        </div>
+                    </div>
+        </section>
+    </main>
+</body>
+</html>
